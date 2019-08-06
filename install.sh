@@ -5,13 +5,16 @@
 
 # sudo apt-get install git liblua5.3* libsdl2* synaptic steam vim snapd-xdg-open
 
-sudo pacman -S vim blender
+sudo pacman -S vim blender nodejs
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si MAKEFLAGS="-j12"
 yay -S snapd
 yay -S opencl-amd
+yay -S mono
+yay -S msbuild
+
 systemctl enable --now apparmor.service
 systemctl enable --now snapd.apparmor.service
 systemctl enable --now snapd.service
@@ -43,6 +46,9 @@ sudo snap alias dotnet-sdk.dotnet dotnet
 
 # Slack
 sudo snap install slack --classic
+
+# Gitkraken
+sudo snap install gitkraken
 
 # Discord
 sudo snap install discord
