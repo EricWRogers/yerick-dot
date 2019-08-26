@@ -26,4 +26,15 @@ sudo apt update
 sudo apt-get install monodevelop
 
 sudo snap install dotnet-sdk --edge --classic
+sudo snap alias dotnet-sdk.dotnet dotnet
+
 sudo snap install code-insiders --classic
+
+# Slack
+sudo snap install slack --classic
+
+# Gitkraken
+sudo snap install gitkraken
+
+# Discord
+sudo snap install discord
